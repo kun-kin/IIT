@@ -950,4 +950,18 @@ footer .container-fluid .footer-content__contact .social-media ul li {
   visibility: visible;
 }
 
+.ui-timepicker-standard {
+  max-width: 300px;
+  margin-left: 40px;
+  top: 30px;
+}
+.ui-timepicker-standard a {
+  font-size: 18px;
+  padding: 6px 0;
+}
+.ui-timepicker-standard a:hover {
+  background-color: #d7ebff;
+  border: none;
+}
+
 /*# sourceMappingURL=style.css.map */
