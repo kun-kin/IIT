@@ -567,6 +567,7 @@ main {
                         color: rgb(61, 61, 61);
                         margin-top: 30px;
                         margin-bottom: 90px;
+                        text-transform: lowercase;
                         @include breackpoint(tablet) {
                             margin-bottom: 10px;
                         }

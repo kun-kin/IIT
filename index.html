@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="lib/css/style.css">
 
 </head>
@@ -272,7 +272,7 @@
                             <input type="email" name="booking-form__email" id="" placeholder="email" class="booking-form__email">
                         </div>
                         <div class="col-6 booking-form__item">
-                            <input type="text" name="booking-form__date" id="datepicker" placeholder="date" class="booking-form__date">
+                            <input type="text" name="booking-form__date" id="datepicker" placeholder="date" class="booking-form__date" autocomplete="off">
                         </div>
                         <div class="col-6 booking-form__item">
                             <input type="text" name="booking-form__time" id="timepicker" placeholder="time" class="booking-form__time">
@@ -447,10 +447,15 @@
     </script>
     <script>
         $(function() {
-            $("#datepicker").datepicker();
+            $("#datepicker").datepicker({
+                dateFormat: "dd-mm-yy",
+                duration: "fast"
+            });
             $("#timepicker").timepicker();
         })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 </body>
 
 </html>

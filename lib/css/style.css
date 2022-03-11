@@ -609,6 +609,7 @@ main section.discover .swiper .swiper-slide .discover-content__body-text {
   color: #3d3d3d;
   margin-top: 30px;
   margin-bottom: 90px;
+  text-transform: lowercase;
 }
 @media screen and (max-width: 768px) {
   main section.discover .swiper .swiper-slide .discover-content__body-text {
